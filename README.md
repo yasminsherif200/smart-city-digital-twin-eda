@@ -55,16 +55,12 @@ A few recurring lessons worth flagging for anyone extending this analysis:
 ## Repository structure
 
 ```
-├── data/                     # raw CSV files (not included — see Data Access)
-├── notebooks/
-│   └── preprocess.ipynb      # full EDA notebook, organized by file with a table of contents
+├── data/                               # CSV files 
+├── smart_city_eda_report.ipynb         # full EDA notebook, organized by file with a table of contents
+│        
 ├── README.md
 └── requirements.txt
 ```
-
-## Data access
-
-The raw CSV files are not included in this repository. Place `districts.csv`, `weather.csv`, `traffic.csv`, `power_grid.csv`, `air_quality.csv`, `public_transport.csv`, `city_events.csv`, and `emergency_events.csv` in a `data/` directory before running the notebook.
 
 ## Requirements
 
@@ -84,7 +80,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-jupyter notebook notebooks/preprocess.ipynb
+smart_city_eda_report.ipynb
 ```
 
 The notebook is organized with markdown headings per file and per analysis step, and includes a clickable table of contents at the top for navigation.
